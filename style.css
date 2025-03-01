@@ -1,0 +1,61 @@
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#display {
+  width: 95%;
+  height: 50px;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
+}
+
+.buttons button:nth-child(1):hover, /* C */
+.buttons button:nth-child(2):hover, /* / */
+.buttons button:nth-child(3):hover, /* * */
+.buttons button:nth-child(4):hover, /* - */
+.buttons button:nth-child(8):hover, /* + */
+.buttons button:nth-child(12):hover, /* % */
+.buttons button:nth-child(17):hover, /* 0 */
+.buttons button:nth-child(19):hover  /* Backspace */ {
+  background-color: #778899; /* 水色 */
+}
+
+.buttons button:nth-child(1), /* C */
+.buttons button:nth-child(2), /* / */
+.buttons button:nth-child(3), /* * */
+.buttons button:nth-child(4), /* - */
+.buttons button:nth-child(8), /* + */
+.buttons button:nth-child(12), /* % */
+.buttons button:nth-child(17), /* 0 */
+.buttons button:nth-child(19)  /* Backspace */ {
+  background-color: #add8e6; /* 水色 */
+}
+
+.buttons button:nth-child(18) {
+  /* = */
+  background-color: #90ee90; /* 緑 */
+}
